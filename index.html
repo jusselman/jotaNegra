@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jota Negra</title>
+    <title>Jota Negra(blackjack)</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/mains.js"></script>
+    <link rel="stylesheet" href="card-css/cardstarter.css">
+    <link rel="stylesheet" href="card-css/cardstarter.min.css">
+
+    <script defer src="js/main.js"></script>
 </head>
 <body>
+    <main class="main-wrapper">
+        <!-- title, dealer, message, player, buttons -->
+        <div id="t-row" class="main-title">
+            <img class="main-img" src="https://i.pinimg.com/originals/9e/72/ef/9e72effac82ef272d1273f86cf826841.jpg">
+            <h1 class="main-title-header">
+                Black Jack<br><br>
+                ♠
+            </h1>
+            <img class="main-img" src="https://i.pinimg.com/originals/9e/72/ef/9e72effac82ef272d1273f86cf826841.jpg">
+        </div>
+        <div id="d-row" class="dealerCtn">
+
+            <div id="dealerHandCtn"></div>
+
+            <div >
+                <h3 class="dealer-score">Dealer Score:<span id="dealScore"></span></h3>
+            </div>
+            
+
+        
+        </div> 
+        <div id="m-row"></div>
+        <div id="p-row" class="playerCtn">
+   
+                <div id="playerHandCtn"></div>
+                
+                <div >
+                    <h3 class="player-score">Player Score:<span id="playScore"></span></h3>
+                </div>
+                
+
+        </div>
+
+        
+        <div class="b-row-1">
+            <button id="btn-hit" onclick="deck.hit()">Hit</button>
+            <button id="btn-stay" onclick="deck.stay()">Stay</button>
+        </div>
+        <div class="b-row-2">
+            <!-- <button id="btn-deal">Deal</button> -->
+            <button id="btn-new" onclick="deck.init()">New Game</button>
+        </div>
+    </main>
     
     
 </body>
