@@ -114,6 +114,17 @@ div#dealerHandCtn img, div#playerHandCtn img {
     border-radius: 5%;
 }
 
+.message-row {
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
 
 div.b-row-1 {
     display: flex;
